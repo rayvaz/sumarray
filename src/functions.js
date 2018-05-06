@@ -9,26 +9,18 @@ function sumArray(n) {
 
   const result = [];
   for (let i = n; i <= n + 3; i++) {
-    const fibResult = fibo(i);
-    //console.log('fibResult:' + fibResult)
-
-    const gResult = G(fibResult);
-    console.log('#############')
-
+    const fiboResult = fibo(i);
+    const gResult = G(fiboResult);
     result.push(gResult);
   }
-
-  //console.log(result)
   return result
 }
 
 function G(k) {
   const numbers = [];
-  console.log('k: ' + k)
 
   for (let i = k; i < k*5; i++) {
     const decomposeSum = decompose(i);
-     console.log(i +' - '+decomposeSum);
 
     if (decomposeSum === k) {
       numbers.push(i)
@@ -74,5 +66,3 @@ module.exports = {
   fibo,
   G
 }
-
-sumArray(5)

@@ -37,3 +37,12 @@ First install dependencies.
 Run the simple tests
 
 `npm test`
+
+## Starting App
+Start the express application which listen on port 3000
+
+`npm start`
+
+Go to [localhost:3000/sum/3](localhost:3000/sum/3)
+
+You can change input parameters at /sum/{n} route which is n number
